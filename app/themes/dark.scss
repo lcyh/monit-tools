@@ -1,0 +1,98 @@
+/*
+ * @Author: fzf404
+ * @Date: 2022-07-20 11:34:27
+ * @LastEditors: fzf404 me@fzf404.art
+ * @LastEditTime: 2023-03-30 14:40:21
+ * @Description: dark 黑夜主题
+ */
+
+/*
+ * 基底
+ */
+
+#app {
+  @apply bg-gray-900 bg-opacity-40;
+}
+
+/*
+ * 颜色
+ */
+
+.text-primary {
+  @apply text-gray-200;
+}
+
+.text-secondary {
+  @apply text-gray-300;
+}
+
+.text-dark {
+  @apply text-gray-600;
+}
+
+.text-theme {
+  @apply text-pink-400;
+}
+
+/*
+ * 背景
+ */
+
+.bg-theme {
+  @apply bg-purple-400;
+}
+
+.border-theme {
+  @apply border-purple-400;
+}
+
+/*
+ * 模态框
+ */
+
+.modal {
+  @apply bg-gray-900 bg-opacity-40;
+}
+
+/*
+ * 设置
+ */
+
+.setting {
+  ul {
+    @apply bg-gray-800 ring-purple-500 ring-opacity-50;
+
+    // 设置内容
+    li {
+      @apply bg-gray-700;
+
+      label {
+        @apply text-gray-300;
+      }
+
+      select {
+        @apply bg-gray-800 text-purple-500 focus:text-purple-600;
+      }
+
+      button {
+        @apply btn-indigo;
+      }
+
+      input[type='checkbox'] {
+        @apply accent-purple-500;
+      }
+
+      input[type='number'],
+      input[type='text'] {
+        @apply bg-gray-800 text-purple-500 focus:text-purple-600;
+      }
+    }
+
+    // 设置操作
+    ol {
+      button:last-child {
+        @apply btn-purple;
+      }
+    }
+  }
+}

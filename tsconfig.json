@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "target": "esnext",
+    "module": "esnext",
+    "outDir": "release",
+    "moduleResolution": "node",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["app/*"]
+    }
+  },
+  "include": [
+    "app/*.ts",
+    "app/**/*.vue",
+    "core/*.ts",
+    "config/*.ts",
+    "event/*.ts",
+    "lib/*.ts",
+    "server/*.ts",
+    "custom.d.ts"
+  ],
+  "exclude": ["node_modules"],
+  "vueCompilerOptions": {
+    "plugins": ["@volar/vue-language-plugin-pug"]
+  }
+}

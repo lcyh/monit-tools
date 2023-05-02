@@ -1,0 +1,98 @@
+/*
+ * @Author: fzf404
+ * @Date: 2022-07-20 12:52:31
+ * @LastEditors: fzf404 me@fzf404.art
+ * @LastEditTime: 2023-03-30 14:45:01
+ * @Description: light 明亮主题
+ */
+
+/*
+ * 基底
+ */
+
+#app {
+  @apply bg-gray-300 bg-opacity-40;
+}
+
+/*
+ * 文字
+ */
+
+.text-primary {
+  @apply text-gray-100;
+}
+
+.text-secondary {
+  @apply text-gray-200;
+}
+
+.text-dark {
+  @apply text-gray-500;
+}
+
+.text-theme {
+  @apply text-sky-400;
+}
+
+/*
+ * 背景
+ */
+
+.bg-theme {
+  @apply bg-blue-400;
+}
+
+.border-theme {
+  @apply border-blue-400;
+}
+
+/*
+ * 模态框
+ */
+
+.modal {
+  @apply bg-gray-300 bg-opacity-40;
+}
+
+/*
+ * 设置
+ */
+
+.setting {
+  ul {
+    @apply bg-gray-200 ring-blue-400 ring-opacity-50;
+
+    // 设置内容
+    li {
+      @apply bg-white shadow;
+
+      label {
+        @apply text-gray-500;
+      }
+
+      button {
+        @apply btn-sky;
+      }
+
+      select {
+        @apply bg-gray-200 text-blue-500 shadow-inner focus:text-blue-600;
+      }
+
+      input[type='checkbox'] {
+        @apply accent-blue-500;
+      }
+
+      input[type='number'],
+      input[type='text'] {
+        @apply bg-gray-200 text-blue-500 shadow-inner focus:text-blue-600;
+      }
+    }
+
+    // 设置操作
+    ol {
+      button:last-child {
+        @apply btn-blue;
+      }
+    }
+  }
+}

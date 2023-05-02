@@ -1,0 +1,39 @@
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+
+      - name: Node
+        uses: actions/setup-node@v3
+        with:
+          cache: pnpm
+          node-version: 16
+
+      - name: Setup
+        run: |
+          pnpm install
+
+      - name: Release
+        run: |
+          pnpm release
+        env:
+          GH_TOKEN: ${{ secrets.token }}

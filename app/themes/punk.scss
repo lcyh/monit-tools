@@ -1,0 +1,98 @@
+/*
+ * @Author: fzf404
+ * @Date: 2022-07-20 12:52:31
+ * @LastEditors: fzf404 me@fzf404.art
+ * @LastEditTime: 2023-03-30 14:09:21
+ * @Description: punk 赛博主题
+ */
+
+/*
+ * 基底
+ */
+
+#app {
+  @apply bg-indigo-600 bg-opacity-40;
+}
+
+/*
+ * 文字
+ */
+
+.text-primary {
+  @apply text-gray-200;
+}
+
+.text-secondary {
+  @apply text-amber-300;
+}
+
+.text-dark {
+  @apply text-indigo-600;
+}
+
+.text-theme {
+  @apply text-red-400;
+}
+
+/*
+ * 主题
+ */
+
+.bg-theme {
+  @apply bg-orange-400;
+}
+
+.border-theme {
+  @apply border-orange-400;
+}
+
+/*
+ * 模态框
+ */
+
+.modal {
+  @apply bg-indigo-600 bg-opacity-40;
+}
+
+/*
+ * 设置
+ */
+
+.setting {
+  ul {
+    @apply bg-amber-200 ring-indigo-400 ring-opacity-50;
+
+    // 设置内容
+    li {
+      @apply bg-amber-100 shadow;
+
+      label {
+        @apply text-indigo-700;
+      }
+
+      select {
+        @apply bg-gray-200 text-indigo-500 shadow-inner focus:text-indigo-600;
+      }
+
+      button {
+        @apply bg-blue-500 hover:bg-blue-600;
+      }
+
+      input[type='checkbox'] {
+        @apply accent-indigo-500;
+      }
+
+      input[type='number'],
+      input[type='text'] {
+        @apply bg-gray-200 text-indigo-500 shadow-inner focus:text-indigo-600;
+      }
+    }
+
+    // 设置操作
+    ol {
+      button:last-child {
+        @apply btn-indigo;
+      }
+    }
+  }
+}
