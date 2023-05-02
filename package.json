@@ -4,7 +4,7 @@
   "private": true,
   "description": "用于展示各种信息的桌面小组件",
   "license": "MIT",
-  "author": "fzf404",
+  "author": "lc",
   "scripts": {
     "build": "vue-cli-service electron:build",
     "dev": "vue-cli-service electron:serve",
