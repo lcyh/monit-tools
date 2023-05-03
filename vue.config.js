@@ -3,8 +3,9 @@ const path = require('path')
 const resolve = (dir) => {
   return path.join(__dirname, dir)
 }
-
+console.log('process.env', process.env.NODE_ENV)
 const config = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/monit-tools/' : '/',
   configureWebpack: {
     // electron 入口
     entry: './core/main.js'
