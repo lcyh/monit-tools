@@ -1,8 +1,8 @@
 /*
  * @Author: fzf404
  * @Date: 2022-05-26 19:48:32
- * @LastEditors: fzf404 me@fzf404.art
- * @LastEditTime: 2023-03-31 09:56:26
+ * @LastEditors: luc19964 luochang@gopherasset.com
+ * @LastEditTime: 2023-05-20 17:26:08
  * @Description: window 初始化
  */
 
@@ -37,7 +37,7 @@ export const createWindow = (option: WindowOption) => {
     alwaysOnTop: option.top, // 窗口置顶
 
     frame: false, // 展示边框
-    resizable: false, // 可变大小
+    resizable: true, // 可变大小
     hasShadow: false, // 展示阴影
     transparent: true, // 窗口透明
     skipTaskbar: true, // 隐藏任务栏图标

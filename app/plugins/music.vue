@@ -1,8 +1,8 @@
 <!--
  * @Author: fzf404
  * @Date: 2022-05-25 23:18:50
- * @LastEditors: fzf404 me@fzf404.art
- * @LastEditTime: 2023-03-30 13:47:16
+ * @LastEditors: luc19964 luochang@gopherasset.com
+ * @LastEditTime: 2023-05-20 17:29:40
  * @Description: music 网易云音乐播放
 -->
 
@@ -149,7 +149,7 @@ const state = reactive({
 // 存储数据
 const store = storage(
   {
-    id: '7667645628', // 歌单 ID
+    id: '347230', // 歌单 ID
     url: 'https://api.fzf404.art/music/', // 接口地址
     mode: 0, // 播放模式 0 循环播放 1 随机播放 2 单曲循环
     cookie: '', // 登陆信息
